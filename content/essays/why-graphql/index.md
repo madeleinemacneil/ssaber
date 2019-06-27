@@ -113,3 +113,8 @@ Most notably, GraphQL is just different. It’s a new paradigm, and requires not
 In a follow up essay, we’ll describe our implementation of GraphQL in more technical terms including how we addressed many of the problems outlined above. Stay tuned by signing up below.
 
 Btw if you’re interested in building bridges alongside us, [we’re hiring](https://www.managedbyq.com/careers).
+
+-
+
+_Thanks to [Matt Briançon](https://mattbriancon.com/index.html), [Phil Sarin](https://twitter.com/philsarin), and Jeffrey Silver for reading drafts of this post_
+

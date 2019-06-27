@@ -1,1 +1,1 @@
-// custom typefaces
+import './content/assets/global.scss';

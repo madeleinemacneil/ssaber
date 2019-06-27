@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link } from "gatsby";
 import gray from 'gray-percentage';
-import styled from 'styled-components';
 
 export default function Header(props) {
   return (
-    <Container>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        width: '240px',
+      }}
+      >
       <h1 style={{ fontSize: '14px', paddingBottom: '2px' }}>
         <Link
           style={{
@@ -20,12 +25,6 @@ export default function Header(props) {
       </h1>
       <div style={{ color: gray(80) }}>work in progress.</div>
       <div>-</div>
-    </Container>
+    </div>
   );
 }
-
-const Container = styled.header`
-  display: flex;
-  flex-direction: column;
-  width: 240px;
-`;

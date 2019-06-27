@@ -1,0 +1,97 @@
+$white: #FFF;
+$gray-light: #BDC1c4;
+$gray-lightest: #F7F7F7;
+$gray-lighter: #DCDFEA;
+$primary: #FF5A5A;
+$primary-light: #FF5A5A;
+$primary-dark: #FF5A5A;
+$input-height: 40px;
+
+input {
+  background-color: $white;
+  border: 1px solid $gray-lighter;
+  transition: background 0.2s, border-color 0.2s;
+  box-sizing: border-box;
+  display: block;
+  height: $input-height;
+  padding: 0 6px;
+  border-radius: 2px;
+  &::-webkit-input-placeholder {
+    color: $gray-light;
+    opacity: 1;
+  }
+
+  &::-ms-input-placeholder {
+    color: $gray-light;
+    opacity: 1;
+  }
+
+  // Hide the clear button IE adds to inputs.
+  &::-ms-clear {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+
+  &::-moz-placeholder {
+    color: $gray-light;
+    opacity: 1;
+  }
+
+  &::placeholder {
+    color: $gray-light;
+    opacity: 1;
+  }
+
+  &:enabled {
+    &:hover {
+      border: 1px solid $gray-light;
+    }
+    &:focus {
+      border: 1px solid $gray-light;
+      outline: 0 none;
+      box-shadow: 0 2px 2px 0 rgba(162, 162, 174, 0.1);
+    }
+  }
+
+  &:disabled {
+    background-color: $gray-lightest;
+  }
+}
+
+button {
+  display: inline-block;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: 0 none;
+  height: $input-height;
+  padding: 0 2em;
+  border-radius: 2px;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &.loading,
+  &.disabled {
+    cursor: default;
+  }
+
+  /* button color */
+  background-color: $primary;
+  color: $white;
+  &:enabled{
+    &:hover {
+      background-color: $primary-light;
+    }
+    &:active {
+      background-color: $primary-dark;
+    }
+  }
+  &.disabled {
+    background-color: lighten($primary, 30%);
+  }
+  &.loading {
+    background-color: $primary-dark;
+  }
+}
