@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from 'gatsby';
 
 import Header from './Header';
 import EmailSignup from './EmailSignup';
 
 import { rhythm } from "../utils/typography";
+import logo from '../../content/assets/ssaber-half.png';
 
 export default class Layout extends React.Component {
   render() {
@@ -11,6 +13,13 @@ export default class Layout extends React.Component {
     return (
       <div>
         <div style={{ backgroundColor: '#000', height: '10px' }} />
+        <Link to='/'>
+          <img
+            src={logo}
+            alt="logo"
+            style={{ height: 45, width: 45, position: 'absolute', right: 0, top: '10px' }}
+          />
+        </Link>
         <div
           style={{
             width: '100%',

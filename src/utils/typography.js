@@ -40,7 +40,7 @@ const typography = new Typography({
       marginTop: rhythm(1.5),
     },
     h2: {
-      fontSize: '16px',
+      fontSize: '14px',
       paddingBottom: `calc(${rhythm(1 / 4)} - 1px)`,
       marginBottom: rhythm(1 / 4),
       marginTop: rhythm(1.5),

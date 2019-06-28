@@ -44,6 +44,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://kinney.us3.list-manage.com/subscribe/post?u=8557f528c7390990a74ec0e34&amp;id=7730fbe58e',
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
