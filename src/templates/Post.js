@@ -17,7 +17,7 @@ class PostTemplate extends React.Component {
     const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
       `https://ssaber.com${slug}`
     )}`;
-    const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/src/pages/${slug.slice(
+    const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/src/content/${slug.slice(
       1,
       slug.length - 1
     )}/index.md`;
@@ -45,11 +45,11 @@ class PostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <a href={discussUrl} target="_blank" rel="noopener noreferrer">
+        <a style={{ marginRight: '10px' }} href={discussUrl} target="_blank" rel="noopener noreferrer">
           Discuss on Twitter
         </a>
-        {` • `}
-        <a href={editUrl} target="_blank" rel="noopener noreferrer">
+        /
+        <a style={{ marginLeft: '10px' }} href={editUrl} target="_blank" rel="noopener noreferrer">
           Edit on GitHub
         </a>
         <ul
