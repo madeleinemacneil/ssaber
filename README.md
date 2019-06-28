@@ -1,7 +1,7 @@
 ## ssaber
 My personal site, it's a work in progress.
 
-Big props to both [Dan Abramov](https://twitter.com/dan_abramov), who's [personal site](https://github.com/gaearon/overreacted.io) heavily influenced its implementation and [GatsbyJS](https://www.gatsbyjs.org/), which underlies both.
+Influenced by [Dan Abramov's](https://twitter.com/dan_abramov) [personal site](https://github.com/gaearon/overreacted.io), forked from [Gatsby's starter blog](https://github.com/gatsbyjs/gatsby-starter-blog).
 
 To run locally:
 ```
